@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" class="!scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webdieo - Web, Edit & Design</title>
+
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <!-- favicon end -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="google-site-verification" content="jZM8UPSztoyTkoLcXDGZTt4yvuTe4g3e-YBj5Svp39I" />
+</head>
+
+<body>
+  <!--------------------- NAVBAR -------------------------->
+
+  <header class="w-full flex justify-center fixed top-0 bg-transparent z-50" id="navbar">
+    <nav class="container mx-10 md:mx-16 py-1 flex justify-between">
+      <!-- <img class="w-[90px] cursor-pointer bg-transparent p-5 pl-0" src="./assets/img/.png"
+        onclick="scrollToSection('home')" /> -->
+      <h1 class=" w-[90px] cursor-pointer font-bold font-Poppins text-3xl p-5 pl-0 text-white"><span
+          class="text-green">W</span>ED</h1>
+
+      <div class="hidden md:flex items-center gap-5">
+        <a class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+          href="index.html">HOME</a>
+        <a class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+          href="#services">SERVICE</a>
+        <a class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+          href="#portfolio">PORTFOLIO</a>
+        <a class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+          href="#about">ABOUT US</a>
+
+      </div>
+      <div class="hidden md:flex items-center">
+        <a href="tel:+918130308421"
+          class="font-semibold font-Poppins bg-green rounded-lg px-3 py-3 w-28 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out text-center">
+          Call Now
+        </a>
+      </div>
+
+      <!--------------- HAMBURGER BUTTON ------------------->
+
+      <div class="flex items-center justify-center mr-2 z-10 md:hidden">
+        <i class="ri-menu-4-line text-2xl font-semibold cursor-pointer text-white" id="hamburger"
+          onclick="toggleMenu()"></i>
+        <i class="hidden ri-close-line text-2xl font-semibold text-white cursor-pointer" id="close-btn"
+          onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+
+    <!--------------- NAVBAR MOBILE VIEW ------------------->
+
+    <div class="md:hidden">
+      <div class="absolute right-[-100%] top-0 h-screen w-2/3 bg-dark transition-all ease-in duration-500"
+        id="mobile-menu">
+        <div class="flex flex-col items-center gap-6 p-8">
+          <div class="w-[70px] flex items-center justify-center">
+            <!-- <img class="ml-2 mt-8 cursor-pointer p-1" src="./assets/img/logo.png" /> -->
+            <h1 class=" ml-2 mt-8 cursor-pointer p-1 text-white"><span class="text-green">W</span>ED</h1>
+          </div>
+
+          <div class="flex flex-col items-center gap-8 mt-5">
+            <a class="font-semibold text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out"
+              href="index.html">HOME</a>
+            <a class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out"
+              href="#services">SERVICE</a>
+            <a class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out"
+              href="#portfolio">PORTFOLIO</a>
+            <a class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out"
+              href="#about">ABOUT US</a>
+
+            <a href="tel:+918130308421"
+              class="font-bold bg-green rounded-lg px-3 py-3 w-28 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out text-center">
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!------------------ HERO SECTION -------------------->
+
+  <section class="w-full h-screen bg-cover bg-no-repeat bg-center flex items-center justify-center" id="home" style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./assets/img/home-bg.jpg);
+      ">
+    <div class="container w-[85%] md:w-2/3 h-3/5 p-4 flex justify-center flex-col mt-[8%]">
+      <h1
+        class="text-4xl md:text-6xl text-white font-bold font-Poppins line-height-1.5  flex animate__animated animate__fadeInUp">
+        Start <br />
+        Build & Grow <br />
+        your Business with
+      </h1>
+      <h1
+        class="text-4xl md:text-6xl text-green font-bold font-Poppins line-height-1.5 wow animate__animated animate__fadeInUp">
+        <span class="auto-type "></span>
+      </h1>
+      <p
+        class="text-sm text-white font-Poppins line-height-1.5 mt-5 w-full md:w-[50%] animate__animated animate__fadeInUp animate__delay-1s">
+        We are a premier creative agency based in New Delhi, specializing in delivering top-notch video editing, website
+        design,
+        and graphic design services to clients worldwide.
+      </p>
+      <button
+        class="font-semibold font-Poppins bg-green rounded-lg px-3 py-3 text-sm text-dark outline-none mt-8 w-28 border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out wow animate__animated animate__fadeInUp animate__delay-2s"
+        onclick="scrollToSection('services')">
+        Services
+      </button>
+    </div>
+  </section>
+
+  <!------------------ SERVICES -------------------->
+
+  <section class="w-full bg-dark flex items-center flex-col" id="services">
+    <div class="container mx-auto md:mx-16 mt-10 flex flex-col items-center justify-center gap-4">
+      <h1
+        class="text-3xl md:text-5xl font-semibold cursor-pointer text-white font-Poppins wow animate__animated animate__fadeInUp">
+        This is What
+        <span class="text-green">We Do
+          <img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design.png" />
+        </span>
+      </h1>
+      <p
+        class="text-sm text-lightText font-Poppins line-height-1.5 text-center w-[80%] md:w-[40%] wow animate__animated animate__fadeInUp">
+        Our website design, video editing and graphic design services seamlessly blend professional expertise with
+        creative
+        flair.
+      </p>
+    </div>
+
+    <div class="flex items-center justify-center mb-10">
+      <div
+        class="container mx-5 md:mx-16 mt-10 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+        <div
+          class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp group">
+          <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-11.svg" />
+          <h3 class="font-semibold text-2xl text-white">
+            WordPress
+          </h3>
+          <p class="text-base text-lightText font-normal">
+            Our team of experts ensures your WordPress website aligns with your business goals. We strategically craft
+            your web
+            presence to propel your product or service towards success.
+          </p>
+        </div>
+
+        <div
+          class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp">
+          <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-5.svg" />
+          <h3 class="font-semibold text-2xl text-white">
+            Graphic Designing
+          </h3>
+          <p class="text-base text-lightText font-normal">
+            Elevate your brand with versatile, tailored multipurpose graphic design services: stunning visuals for
+            marketing,
+            branding, and social media.
+          </p>
+        </div>
+
+        <div
+          class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp">
+          <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-1.svg" />
+          <h3 class="font-semibold text-2xl text-white">Video Editing</h3>
+          <p class="text-base text-lightText font-normal">
+            Transform your raw footage into stunning, engaging videos with our professional video editing services. From
+            concept to
+            delivery, we bring your story to life.
+          </p>
+        </div>
+
+        <div
+          class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp">
+          <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-2.svg" />
+          <h3 class="font-semibold text-2xl text-white">Cinematography</h3>
+          <p class="text-base text-lightText font-normal">
+            Art of capturing and composing visually compelling images to tell a story on screen.
+          </p>
+        </div>
+
+        <div
+          class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp">
+          <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-4.svg" />
+          <h3 class="font-semibold text-2xl text-white">Ad Shoot</h3>
+          <p class="text-base text-lightText font-normal">
+            In commercial photography the emphasis of the whole shoot is on
+            the product.
+          </p>
+        </div>
+
+        <div
+          class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp">
+          <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-3.svg" />
+          <h3 class="font-semibold text-2xl text-white">Business Shoot</h3>
+          <p class="text-base text-lightText font-normal">
+            Elevate your professional image with our tailored business shoot
+            services
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------ PORTFOLIO -------------------->
+
+  <section class="w-full bg-white flex items-center flex-col" id="portfolio">
+    <h1
+      class="mt-10 text-center text-4xl md:text-5xl font-semibold cursor-pointer text-dark font-Poppins wow animate__animated animate__fadeInUp">
+      OUR PORTFOLIO<img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design-dark.png" />
+    </h1>
+
+    <div class="flex items-center justify-center">
+      <div
+        class="container mx-auto md:mx-16 mt-10 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+        <img
+          class="w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer object-cover wow animate__animated animate__fadeInUp"
+          src="./assets/img/portfolio-1.png" />
+
+        <img
+          class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer wow animate__animated animate__fadeInUp"
+          src="./assets/img/portfolio-2.png" />
+
+        <img
+          class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer wow animate__animated animate__fadeInUp"
+          src="./assets/img/portfolio-3.jpg" />
+
+        <img
+          class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer wow animate__animated animate__fadeInUp"
+          src="./assets/img/portfolio-4.jpg" />
+
+        <img
+          class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer wow animate__animated animate__fadeInUp"
+          src="./assets/img/portfolio-5.jpg" />
+
+        <img
+          class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer wow animate__animated animate__fadeInUp"
+          src="./assets/img/portfolio-6.jpg" />
+
+      </div>
+    </div>
+    <a href="https://www.instagram.com/iamsatyam28" target="_blank"
+      class="mt-5 mb-10 font-semibold font-Poppins bg-green rounded-lg px-3 py-3 w-32 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out text-center wow animate__animated animate__fadeInUp">
+      Click for More
+    </a>
+  </section>
+
+  <!------------------ ABOUT US -------------------->
+
+  <section class="w-full bg-dark flex flex-col items-center" id="about">
+    <h1
+      class="mt-10 text-center text-bgCol text-4xl md:text-5xl font-semibold cursor-pointer font-Poppins wow animate__animated animate__fadeInUp">
+      ABOUT
+      <span class="text-green">
+        US<img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design.png" /></span>
+    </h1>
+
+    <div class="flex items-center justify-center mb-20">
+      <div class="flex justify-between items-center flex-col md:flex-row container mx-auto md:mx-16 mt-10">
+        <div class="w-[90%] md:w-[50%] relative wow animate__animated animate__fadeInUp">
+          <img
+            class="object-cover relative rounded-sm sm:w-full z-20 transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer "
+            src="./assets/img/about.jpg" />
+          <div class="bg-green absolute rounded-sm bottom-[-10px] left-[-10px] w-full h-full z-10"></div>
+        </div>
+
+        <div class="flex flex-col justify-center items-start p-5 w-full md:w-[45%]">
+          <h4
+            class="font-semibold text-2xl md:text-3xl text-bgCol mt-10 md:mt-0 font-Poppins wow animate__animated animate__fadeInUp">
+            The Creative Minds Behind The WED
+          </h4>
+          <p class="text-sm md:text-base mt-5 text-lightText font-Poppins wow animate__animated animate__fadeInUp">
+            Welcome to
+            <span class="text-green">Webdieo,</span> where
+            we prioritize quality over quantity. Our approach is to concentrate on each client's project with unwavering
+            dedication,
+            ensuring that we deliver exceptional results that exceed expectations.
+          </p>
+
+          <button
+            class="mt-5 font-semibold font-Poppins bg-green rounded-lg px-3 py-3 w-28 text-sm text-center text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out wow animate__animated animate__fadeInUp"
+            onclick="scrollToSection('contact')">
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------ OUR TEAM -------------------->
+
+  <section class="w-full bg-white flex items-center flex-col">
+    <h1
+      class="mt-10 text-center text-4xl md:text-5xl font-semibold cursor-pointer text-dark font-Poppins wow animate__animated animate__fadeInUp">
+      Members of Webdieo<img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design-dark.png" />
+    </h1>
+
+    <div class="flex items-center justify-center">
+      <div
+        class="container mx-auto md:mx-16 my-10 w-[90%] sm:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center ">
+        <div class="overflow-hidden wow animate__animated animate__fadeInUp ">
+          <img
+            class="object-cover rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/tm-1.png" alt="Team Member 1" />
+
+          <h1 class="text-xl text-dark text-center md:text-xl font-bold pt-2">
+            Satyam Mishra(Founder)
+          </h1>
+        </div>
+
+        <div class="overflow-hidden wow animate__animated animate__fadeInUp">
+          <img
+            class="object-cover rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/tm-2.png" alt="Team Member 2" />
+
+          <h1 class="text-xl text-dark text-center md:text-xl font-bold pt-2">
+            Apply Now (You)
+          </h1>
+        </div>
+
+        <div class="overflow-hidden wow animate__animated animate__fadeInUp">
+          <img
+            class="object-cover rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/tm-3.png" alt="Team Member 3" />
+
+          <h1 class="text-xl text-dark text-center md:text-xl font-bold pt-2">
+            Sumit
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!----------------- CONTACT US -------------------->
+
+  <section class="w-full bg-dark flex flex-col items-center" id="contact">
+    <h1
+      class="mt-10 text-center text-bgCol text-4xl md:text-5xl font-semibold cursor-pointer font-Poppins wow animate__animated animate__fadeInUp ">
+      CONTACT
+      <span class="text-green">
+        US<img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design.png" /></span>
+    </h1>
+
+    <div class="flex items-center justify-center mb-20">
+      <div class="flex justify-between items-center flex-col md:flex-row container mx-auto md:mx-16 mt-10">
+        <div class="w-[90%] md:w-[50%] relative wow animate__animated animate__fadeInUp">
+          <img
+            class="object-cover relative rounded-sm sm:w-full z-20 transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer "
+            src="./assets/img/contact-bg.jpg" />
+          <div class="bg-green absolute rounded-sm bottom-[-10px] left-[-10px] w-full h-full z-10"></div>
+        </div>
+
+        <div class="flex flex-col justify-start mt-10 md:mt-0 w-[90%] md:w-[40%]">
+          <p
+            class="font-semibold text-2xl text-center md:text-3xl text-white font-Poppins wow animate__animated animate__fadeInUp">
+            Get In Touch
+          </p>
+
+          <div class="flex flex-col mt-5 gap-5 wow animate__animated animate__fadeInUp ">
+            <div class="flex flex-col gap-2">
+              <p class="font-Poppins text-lightText text-base ">We're always ready to listen and address your
+                queries,
+                concerns, or feedback. Reach out to us through any of the channels listed below, and we'll get
+                back to
+                you as soon as possible.</p>
+              <p class="text-2xl text-white font-semibold mt-2 sm:mt-2">Contact :</p>
+            </div>
+
+            <div class="flex gap-5 text-white items-center cursor-pointer">
+
+              <i class="ri-phone-fill text-xl"></i>
+              <div class="gap-2">
+                <h1 class="text-base font-Poppins font-medium">Call Us</h1>
+                <a href="tel:+918130308421">
+                  <p class="text-sm font-Poppins text-lightText">+918130308421</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex gap-5 text-white items-center">
+              <i class="ri-mail-line text-xl"></i>
+              <div class="gap-2">
+                <h1 class="text-base font-Poppins font-medium">Our Mail</h1>
+                <a href="mailto:iamsaikat87@gmail.com">
+                  <p class="text-sm font-Poppins text-lightText">
+                    satyammishra.work@gmail.com
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <p class="text-2xl text-white font-semibold">Follow Us :</p>
+
+              <div class="flex gap-3 mt-5">
+                <a class="text-dark text-center bg-green border border-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+                  href="https://wa.me/+918130308421" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" class="h-5 w-5">
+                    <path fill="currentColor"
+                      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                  </svg>
+                </a>
+
+                <a class="text-dark text-center border border-green bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+                  href="https://www.facebook.com/" target="_blank"><svg viewBox="0 0 320 512" class="h-5 w-5">
+                    <path fill="currentColor"
+                      d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                    </path>
+                  </svg>
+                </a>
+
+                <a class="text-dark text-center border border-green bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+                  href="https://www.instagram.com/iamsatyam28" target="_blank"><svg viewBox="0 0 448 512"
+                    class="h-5 w-5">
+                    <path fill="currentColor"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------ SECTION -------------------->
+
+  <section class="w-full h-[70vh] bg-cover bg-no-repeat bg-center flex items-center justify-center" style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./assets/img/cta.jpg);
+      ">
+    <div class="relative">
+      <i class="ri-double-quotes-l text-white text-3xl sm:text-5xl absolute left-0 bottom-12"></i>
+
+      <h1
+        class="text-3xl sm:text-5xl text-white font-bold font-Poppins line-height-1.5 wow animate__animated animate__fadeInUp">
+        Multiply Impact, Minimize Cost
+      </h1>
+
+      <i class="ri-double-quotes-r text-white text-3xl sm:text-5xl absolute right-0"></i>
+    </div>
+  </section>
+
+  <hr />
+  <!------------------ FOOTER -------------------->
+
+  <footer class="w-full" id="footer">
+    <section class="w-full bg-footer flex items-center justify-center font-Poppins text-white">
+      <div
+        class="container mx-auto sm:mx-16 my-14 sm:my-24 flex gap-6 flex-col sm:flex-row justify-between items-center sm:items-baseline">
+        <div class="w-[90%] sm:w-1/3 flex flex-col gap-4">
+          <a href="index.html">
+            <!-- <img class="w-[90px]" src="./assets/img/logo.png" /> -->
+            <h1 class="font-bold text-3xl cursor-pointer p-1 text-white"><span class="text-green">W</span>ED</h1>
+          </a>
+
+          <p class="text-lightText text-sm w-[80%] leading-6 mt-5 font-medium">
+            Webdieo a premier creative agency based in New Delhi, specializing in delivering top-notch video
+            editing,
+            website design, and graphic design services that help clients achieve their marketing goals.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <a class="text-dark text-center bg-green border border-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+              href="https://wa.me/+918130308421" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" class="h-5 w-5">
+                <path fill="currentColor"
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+            </a>
+
+            <a class="text-dark text-center border border-green bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+              href="https://www.facebook.com/" target="_blank"><svg viewBox="0 0 320 512" class="h-5 w-5">
+                <path fill="currentColor"
+                  d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                </path>
+              </svg>
+            </a>
+
+            <a class="text-dark text-center border border-green bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+              href="https://www.instagram.com/iamsatyam28" target="_blank"><svg viewBox="0 0 448 512" class="h-5 w-5">
+                <path fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-[90%] sm:w-1/3 flex flex-col gap-4">
+          <h3 class="text-2xl font-semibold">Quick Links</h3>
+
+          <ul class="flex flex-col gap-3 mt-5 text-white">
+            <li>
+              <a class="text-base hover:text-green transition duration-300 ease-in-out" href="#about">About Us</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-green transition duration-300 ease-in-out" href="#portfolio">Our
+                Portfolio</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-green transition duration-300 ease-in-out" href="tel:+918130308421">Contact
+                Us</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-green transition duration-300 ease-in-out" href="#services">Services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-[90%] sm:w-1/3 flex flex-col gap-4">
+          <h3 class="text-2xl font-semibold">Contact Information</h3>
+
+          <div class="flex gap-5 text-white items-center mt-5">
+            <i class="ri-map-pin-2-line w-5 h-5 text-xl"></i>
+            <div class="gap-2">
+              <h1 class="text-base font-Poppins font-medium">Our Address</h1>
+              <p class="text-sm font-Poppins text-lightText">
+                Delhi, India
+              </p>
+            </div>
+          </div>
+
+          <div class="border-b"></div>
+
+          <div class="flex gap-5 text-white items-center">
+            <i class="ri-phone-fill text-xl"></i>
+            <div class="gap-2">
+              <h1 class="text-base font-Poppins font-medium">Call Us</h1>
+              <p class="text-sm font-Poppins text-lightText">+918130308421</p>
+            </div>
+          </div>
+
+          <div class="border-b"></div>
+
+          <div class="flex gap-5 text-white items-center">
+            <i class="ri-mail-line text-xl"></i>
+            <div class="gap-2">
+              <h1 class="text-base font-Poppins font-medium">Our Mail</h1>
+              <p class="text-sm font-Poppins text-lightText">
+                satyammishra.work@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-copyrightBg text-white flex items-center justify-center">
+      <p class="text-[13px] sm:text-base font-medium p-7">
+        <i class="ri-copyright-line font-Poppins"></i> 2024 Webdieo - All Rights Reserved.
+      </p>
+    </section>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="wow.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
